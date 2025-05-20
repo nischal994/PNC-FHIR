@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fever-observation-profile",
+  "url": "http://hl7.org/fhir/uv/shorthand/StructureDefinition/fever-observation-profile",
+  "version": "3.0.0",
+  "name": "FeverObservationProfile",
+  "title": "Fever Observation Profile",
+  "status": "draft",
+  "description": "A profile to record presence or absence of fever using a boolean value.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "8310-5",
+              "system": "http://loinc.org",
+              "display": "Body temperature"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]:valueBoolean",
+        "path": "Observation.value[x]",
+        "sliceName": "valueBoolean",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

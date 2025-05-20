@@ -1,0 +1,26 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "other-treatment-procedure-profile",
+  "url": "http://hl7.org/fhir/uv/shorthand/StructureDefinition/other-treatment-procedure-profile",
+  "version": "3.0.0",
+  "name": "OtherTreatmentProcedureProfile",
+  "title": "Other Treatment or Medication Procedure Profile",
+  "status": "draft",
+  "description": "Profile to capture any unspecified or additional treatment or medication provided, documented as free-text in Procedure.note.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.note",
+        "path": "Procedure.note",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

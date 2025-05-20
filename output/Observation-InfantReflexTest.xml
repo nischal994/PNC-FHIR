@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="InfantReflexTest"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-test"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation InfantReflexTest</b></p><a name="InfantReflexTest"> </a><a name="hcInfantReflexTest"> </a><a name="InfantReflexTest-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-infant-test.html">Infant Test Observations</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 8358-4}">Infant reflex assessment</span></p><p><b>value</b>: <span title="Codes:{http://example.org/fhir/infant-tests present}">Present</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8358-4"/>
+      <display value="Infant reflex assessment"/>
+    </coding>
+  </code>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://example.org/fhir/infant-tests"/>
+      <code value="present"/>
+      <display value="Present"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

@@ -1,0 +1,27 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/input/ImplementationGuide-hl7.fhir.uv.shorthand.xml	3572	-	0	0	0	0	0	0	4	2906	0	0	0	0	0	0	0	1	0	0	96	43	0	0	0	2	0	3
+fsh-generated/resources/MedicationStatement-VitaminKMedicationStatement.json	498	11	0	0	1	0	0	0	0	17	0	0	0	0	0	0	0	0	0	0	20	12	0	0	0	0	0	0
+fsh-generated/resources/Observation-ChillsObservation.json	455	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	8	12	0	0	0	0	0	0
+fsh-generated/resources/Observation-CyanosisObservation.json	451	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	7	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-EyeDischargeObservation.json	474	2	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-FeverObservation.json	444	2	0	0	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-InfantReflexTest.json	548	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	7	9	0	0	0	0	0	0
+fsh-generated/resources/Procedure-OtherTreatmentProcedure.json	361	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	7	12	0	0	0	0	0	0
+fsh-generated/resources/ServiceRequest-ReferralRequestExample.json	470	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	7	12	0	0	0	0	0	1
+fsh-generated/resources/StructureDefinition-breastfeeding-position.json	1248	2	0	46	0	0	0	0	0	73	0	0	2	0	0	0	0	2	0	0	246	2830	0	0	0	6	1	1
+fsh-generated/resources/StructureDefinition-breastfeeding-problem.json	1402	17	0	39	0	0	0	0	0	22	0	0	0	0	0	0	0	1	0	0	255	264	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-chest-indrawing.json	1384	1	0	32	0	0	0	0	0	33	0	0	0	0	0	0	0	1	0	0	261	222	0	0	0	5	0	4
+fsh-generated/resources/StructureDefinition-chills-observation-profile.json	1790	2	0	44	2	0	0	0	0	19	0	0	0	0	0	0	0	1	0	0	251	264	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-cyanosis-observation-profile.json	1765	2	0	40	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	262	191	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-early-jaundice.json	2004	2	0	30	0	0	0	0	0	19	0	0	1	0	0	0	0	1	0	0	266	209	0	0	0	5	1	0
+fsh-generated/resources/StructureDefinition-exclusive-breastfeeding.json	1226	2	0	43	1	0	0	0	0	40	0	0	0	0	0	0	0	0	0	0	226	177	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-eye-discharge-observation-profile.json	1820	1	0	31	0	0	0	0	0	21	0	0	0	0	0	0	0	1	0	0	249	175	0	1	0	6	0	1
+fsh-generated/resources/StructureDefinition-fever-observation-profile.json	1731	2	0	53	0	0	0	0	0	18	0	0	0	0	0	0	0	0	0	0	248	200	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-infant-breathing-rate.json	1929	6	0	31	1	0	0	0	0	17	0	0	0	0	0	0	0	1	0	0	254	165	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-infant-test.json	723	2	0	110	0	0	0	0	0	16	0	0	1	0	0	0	0	0	0	0	216	166	0	0	0	4	1	1
+fsh-generated/resources/StructureDefinition-infant-umbilical-cord-observation.json	2555	2	0	33	0	0	0	0	0	3543	0	0	0	0	0	0	0	1	0	0	275	169	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-other-treatment-procedure-profile.json	854	2	0	24	0	0	0	0	0	15	0	0	0	0	0	0	0	1	0	0	183	130	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-referral-servicerequest-profile.json	1169	2	0	26	1	0	0	0	0	1599	0	0	0	0	0	0	0	0	0	0	212	146	0	0	0	5	1	1
+fsh-generated/resources/StructureDefinition-severe-jaundice.json	1386	2	0	28	0	0	0	0	0	17	0	0	1	0	0	0	0	1	0	0	252	159	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-vitamin-k-medication-statement-profile.json	1623	2	0	17	0	0	0	0	0	30	0	0	0	0	0	0	0	0	0	0	141	102	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-PositionRatingVS.json	518	2	0	0	0	0	0	0	0	1692	0	0	0	0	0	0	0	0	0	0	7	4088	0	0	0	1	0	0

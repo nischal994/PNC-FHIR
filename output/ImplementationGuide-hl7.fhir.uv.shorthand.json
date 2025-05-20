@@ -1,0 +1,987 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "hl7.fhir.uv.shorthand",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.uv.shorthand</b></p><a name=\"hl7.fhir.uv.shorthand\"> </a><a name=\"hchl7.fhir.uv.shorthand\"> </a><a name=\"hl7.fhir.uv.shorthand-en-US\"> </a><h2>FHIRShorthand</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand</pre><div><p>Describes FHIR Shorthand (FSH), a domain-specific language (DSL) for defining the content of FHIR Implementation Guides (IG).</p>\n</div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "fhir"
+  }],
+  "url" : "http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand",
+  "version" : "3.0.0",
+  "name" : "FHIRShorthand",
+  "title" : "FHIR Shorthand",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-20T19:13:00+05:45",
+  "publisher" : "HL7 International / FHIR Infrastructure",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/fiwg"
+    }]
+  }],
+  "description" : "Describes FHIR Shorthand (FSH), a domain-specific language (DSL) for defining the content of FHIR Implementation Guides (IG).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "packageId" : "hl7.fhir.uv.shorthand",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2nd Mixed Normative-Trial Use"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2020+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/uv/shorthand/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2nd Mixed Normative-Trial Use"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2020+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/uv/shorthand/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/VitaminKMedicationStatement"
+      },
+      "name" : "Example MedicationStatement - VitaminKMedicationStatement",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/vitamin-k-medication-statement-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ChillsObservation"
+      },
+      "name" : "Example Observation - ChillsObservation",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/chills-observation-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/CyanosisObservation"
+      },
+      "name" : "Example Observation - CyanosisObservation",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/cyanosis-observation-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EyeDischargeObservation"
+      },
+      "name" : "Example Observation - EyeDischargeObservation",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/eye-discharge-observation-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/FeverObservation"
+      },
+      "name" : "Example Observation - FeverObservation",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/fever-observation-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/InfantReflexTest"
+      },
+      "name" : "Example Observation - InfantReflexTest",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/OtherTreatmentProcedure"
+      },
+      "name" : "Example Procedure - OtherTreatmentProcedure",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/other-treatment-procedure-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/ReferralRequestExample"
+      },
+      "name" : "Example ServiceRequest - ReferralRequestExample",
+      "exampleCanonical" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/referral-servicerequest-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/breastfeeding-position"
+      },
+      "name" : "BreastfeedingPositionObservation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/breastfeeding-problem"
+      },
+      "name" : "BreastfeedingProblemObservation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chest-indrawing"
+      },
+      "name" : "SevereChestIndrawingObservation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chills-observation-profile"
+      },
+      "name" : "Chills (Cold Extremities) Observation Profile",
+      "description" : "Profile to record presence or absence of chills using a boolean value indicating cold extremities."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/cyanosis-observation-profile"
+      },
+      "name" : "Cyanosis Observation Profile",
+      "description" : "Profile to capture the presence or absence of cyanosis (blue face) as a boolean observation."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/early-jaundice"
+      },
+      "name" : "JaundiceWithin24HoursObservation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/exclusive-breastfeeding"
+      },
+      "name" : "Exclusive Breastfeeding Observation",
+      "description" : "Whether exclusive breastfeeding is being practiced."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/eye-discharge-observation-profile"
+      },
+      "name" : "Eye Discharge Observation Profile",
+      "description" : "Profile for recording the presence or absence of purulent conjunctivitis (eye discharge) as a boolean observation."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fever-observation-profile"
+      },
+      "name" : "Fever Observation Profile",
+      "description" : "A profile to record presence or absence of fever using a boolean value."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/infant-breathing-rate"
+      },
+      "name" : "Infant Breathing Rate",
+      "description" : "Observation of infant's respiratory rate in breaths per minute."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/infant-test"
+      },
+      "name" : "Infant Test Observations",
+      "description" : "General profile for documenting multiple infant tests such as reflexes or jaundice."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/infant-umbilical-cord-observation"
+      },
+      "name" : "Infant Umbilical Cord Condition",
+      "description" : "Observation of the infant's umbilical cord condition post-birth."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/other-treatment-procedure-profile"
+      },
+      "name" : "Other Treatment or Medication Procedure Profile",
+      "description" : "Profile to capture any unspecified or additional treatment or medication provided, documented as free-text in Procedure.note."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/referral-servicerequest-profile"
+      },
+      "name" : "Referral ServiceRequest Profile",
+      "description" : "Profile for capturing referral requests during postnatal care."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/severe-jaundice"
+      },
+      "name" : "SevereJaundiceObservation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vitamin-k-medication-statement-profile"
+      },
+      "name" : "Vitamin K Medication Statement Profile",
+      "description" : "Profile for recording administration of Vitamin K to infants using MedicationStatement."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PositionRatingVS"
+      },
+      "name" : "PositionRatingVS"
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "FHIR Shorthand",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "overview.html"
+        }],
+        "nameUrl" : "overview.html",
+        "title" : "Overview",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "reference.html"
+        }],
+        "nameUrl" : "reference.html",
+        "title" : "Language Reference",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "change_log.html"
+        }],
+        "nameUrl" : "change_log.html",
+        "title" : "Change Log",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/pagecontent"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    }]
+  }
+}

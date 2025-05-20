@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "CyanosisObservation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/shorthand/StructureDefinition/cyanosis-observation-profile"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "276885007",
+        "system": "http://snomed.info/sct",
+        "display": "Cyanosis"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/123"
+  },
+  "valueBoolean": true
+}

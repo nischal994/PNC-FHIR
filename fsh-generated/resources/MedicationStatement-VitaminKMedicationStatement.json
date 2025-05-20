@@ -1,0 +1,22 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "VitaminKMedicationStatement",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/shorthand/StructureDefinition/vitamin-k-medication-statement-profile"
+    ]
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "1091292",
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "display": "Vitamin K"
+      }
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/123"
+  }
+}

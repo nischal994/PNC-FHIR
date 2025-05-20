@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "chest-indrawing",
+  "url": "http://hl7.org/fhir/uv/shorthand/StructureDefinition/chest-indrawing",
+  "version": "3.0.0",
+  "name": "SevereChestIndrawingObservation",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "248338003",
+              "system": "http://snomed.info/sct",
+              "display": "Chest indrawing"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueBoolean",
+        "path": "Observation.value[x]",
+        "sliceName": "valueBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

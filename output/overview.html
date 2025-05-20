@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Overview - FHIR Shorthand v3.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Shorthand</span>
+            <br/>
+            <span style="display:inline-block;">3.0.0 - 2nd Mixed Normative-Trial Use
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="overview.html">Overview</a></li>
+  <li><a href="reference.html">Language Reference</a></li>
+  <li><a href="FSHQuickReference.pdf">Quick Reference Card</a></li>
+   <li><a href="change_log.html">Change Log</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">More<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/FHIR/sushi/tree/v3.8.0/antlr/src/main/antlr" target="_blank">FSH Grammar</a></li>
+      <li><a href="full-ig.zip">Full Implementation Guide (zip file)</a></li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Overview</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Shorthand - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/shorthand/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Overview</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#fhir-shorthand-language-basics" id="markdown-toc-fhir-shorthand-language-basics">FHIR Shorthand Language Basics</a></li>
+  <li><a href="#defining-items-in-fsh" id="markdown-toc-defining-items-in-fsh">Defining Items in FSH</a></li>
+  <li><a href="#line-by-line-walkthrough" id="markdown-toc-line-by-line-walkthrough">Line-by-Line Walkthrough</a></li>
+  <li><a href="#fsh-in-practice" id="markdown-toc-fsh-in-practice">FSH in Practice</a></li>
+</ul>
+
+</div>
+<style>
+    .shadeRow1 tr:nth-child(1) { background: #fff5e6; }
+    .shadeRow6 tr:nth-child(6) { background: #fff5e6; }
+    .shadeRow9 tr:nth-child(9) { background: #fff5e6; }
+    .shadeRow10 tr:nth-child(10) { background: #fff5e6; }
+    .shadeRow11 tr:nth-child(11) { background: #fff5e6; }
+    .shadeRow12 tr:nth-child(12) { background: #fff5e6; }
+    .shadeRow14 tr:nth-child(14) { background: #fff5e6; }
+    .shadeRow15 tr:nth-child(15) { background: #fff5e6; }
+    .shadeCol7 td:nth-child(7) { background: #fff5e6; }
+    .shadeCol10 td:nth-child(10) { background: #fff5e6; }
+    .shadeHead7 th:nth-child(7) { background: #fff5e6; }
+    .shadeHead10 th:nth-child(10) { background: #fff5e6; }
+    .unshadeHead th { background: white; }
+    .optional { color: #CC3F00; }
+    .caption { color: darkgreen; font-weight: bold; }
+    .tuSpan { background-color: #fff5e6; }
+    .tuBlock { padding-top: 5px; padding-left: 5px; padding-right: 10px; padding-bottom: 5px; background-color: #fff5e6; }
+    .tuIcon { padding-left: 3px; padding-right: 3px; border: 1px grey solid; font-weight: bold; color: black; background-color: #fff5e6 }
+    code {color: black; background: #F0F0F0;}
+    h3 {margin-top: 24px;}
+    h4 {margin-top: 18px;}
+    h5 {margin-top: 12px;}
+    p {line-height: 1.5}
+</style>
+
+<p><br />
+<span style="background-color: LightYellow;">NOTE: Information on this page is <a href="https://hl7.org/fhir/versions.html#std-process">informative content</a>.</span>
+<br /></p>
+
+<p>FHIR Shorthand (FSH) is a domain-specific language for defining FHIR artifacts involved in creation of FHIR Implementation Guides (IG). The language is specifically designed for this purpose, simple and compact, and allows the author to express their intent with fewer concerns about underlying FHIR mechanics. FSH can be created and updated using any text editor, and because it is text, it enables distributed, team-based development using source code control tools such as GitHub.</p>
+
+<h3 id="fhir-shorthand-language-basics">FHIR Shorthand Language Basics</h3>
+
+<p>The complete FSH language is formally described in the <a href="reference.html">FHIR Shorthand Language Reference</a>. Here we present just enough to get a taste of FSH.</p>
+
+<ul>
+  <li><strong>Grammar</strong>: <a href="https://github.com/FHIR/sushi/tree/v3.8.0/antlr/src/main/antlr">FSH has a formal grammar</a> defined in <a href="https://www.antlr.org/">ANTLR</a>.</li>
+  <li><strong>Data types</strong>: The primitive and complex data types and value formats in FSH are identical to the primitive types and value formats in <a href="https://hl7.org/fhir/R4/datatypes.html#2.24.0">FHIR R4</a> and <a href="https://hl7.org/fhir/R5/datatypes.html#2.1.28.0">FHIR R5</a>. The types available for use when authoring are dependent upon the targeted version of FHIR.</li>
+  <li><strong>Whitespace</strong>: Repeated whitespace has meaning within FSH files only within string literals and when used for <a href="reference.html#indented-rules">indenting rules</a>. In all other contexts, repeated whitespace is not meaningful.</li>
+  <li><strong>Comments</strong>: FSH uses <code class="language-plaintext highlighter-rouge">//</code> as leading delimiter for single-line comments, and the pair <code class="language-plaintext highlighter-rouge">/*</code>  <code class="language-plaintext highlighter-rouge">*/</code> to delimit multiple line comments.</li>
+  <li>
+    <p><strong>Asterisk Character</strong>: A leading asterisk is used to denote FSH rules. For example, here is a rule to set an element named <code class="language-plaintext highlighter-rouge">active</code> to <code class="language-plaintext highlighter-rouge">true</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* active = true
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Escape Character</strong>: FSH uses the backslash as the escape character in string literals. For example, use <code class="language-plaintext highlighter-rouge">\"</code> to embed a quotation mark in a string.</li>
+  <li>
+    <p><strong>Caret Character</strong>: FSH uses <a href="reference.html#caret-paths">caret syntax</a> to directly reference the definitional structure associated with an item. When defining a profile, the caret character <code class="language-plaintext highlighter-rouge">^</code> (also called circumflex) allows you to refer to elements in the StructureDefinition. For example, to set the element <code class="language-plaintext highlighter-rouge">StructureDefinition.experimental</code>:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* ^experimental = false
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Aliases</strong>: To improve readability, FSH allows the user to define aliases for URLs and object identifiers (OIDs). Once defined anywhere in a FSH project, the alias can be used most places a URL or OID is required or accepted. See <a href="reference.html#defining-aliases">Defining Aliases</a> for details. By convention, aliases often begin with <code class="language-plaintext highlighter-rouge">$</code> character, for example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias: $SCT = http://snomed.info/sct
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Coded Data Types</strong>: A leading hash sign (<code class="language-plaintext highlighter-rouge">#</code>) (<em>aka</em> number sign, pound sign, or octothorpe) is used in FSH to denote a code taken from a formal terminology. FSH provides special grammar for expressing FHIR's coded data types (code, Coding, and CodeableConcept) that combines the code system, code, and (optionally) a display text. Here is a SNOMED-CT code in this syntax, using the previously-defined alias:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$SCT#363346000 "Malignant neoplastic disease (disorder)"
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="defining-items-in-fsh">Defining Items in FSH</h3>
+
+<p>FSH items represent FHIR artifacts such as profiles, value sets, and extensions. They are defined in three parts: (1) a declaration, (2) a set of keywords, and (3) a set of rules.</p>
+
+<h4 id="declarations">Declarations</h4>
+
+<p>Declarations introduce and name new FSH items. Declarations are always the first statement in a FSH item. There are <a href="reference.html#declaration-statements">eleven declarations in FSH</a>. Frequently-used declarations include <code class="language-plaintext highlighter-rouge">Profile</code>, <code class="language-plaintext highlighter-rouge">Extension</code>, <code class="language-plaintext highlighter-rouge">ValueSet</code>, and <code class="language-plaintext highlighter-rouge">Instance</code>. Here are two examples of declaration statements:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Profile: CancerDiseaseStatus
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ValueSet: ConditionStatusTrendVS
+</code></pre></div></div>
+
+<h4 id="keywords">Keywords</h4>
+
+<p>Following the declaration, each FSH item has a set of required and optional keywords, as detailed in the <a href="reference.html#keyword-statements">FSH Language Reference</a>. This example uses the keywords <code class="language-plaintext highlighter-rouge">Parent</code>, <code class="language-plaintext highlighter-rouge">Id</code>, <code class="language-plaintext highlighter-rouge">Title</code>, and <code class="language-plaintext highlighter-rouge">Description</code> following the <code class="language-plaintext highlighter-rouge">Profile</code> declaration:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Profile: CancerDiseaseStatus
+Parent:  Observation
+Id:      mcode-cancer-disease-status
+Title:   "Cancer Disease Status"
+Description: "A clinician's qualitative judgment on the current trend of the cancer, e.g., whether it is stable, worsening (progressing), or improving (responding)."
+</code></pre></div></div>
+
+<h4 id="rules">Rules</h4>
+
+<p>The keyword section is followed by a number of rules. Rules are the mechanism for constraining a profile, defining an extension, creating slices, and more. All FSH rules begin with an asterisk. Here is a non-exhaustive summary of some of the more important rules in FSH:</p>
+
+<ul>
+  <li>
+    <p><strong>Assignment rules</strong> are used to set fixed values in instances and required patterns in profiles. For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* bodySite.text = "Left ventricle"
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* onsetDateTime = "2019-04-02"
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* status = #arrived
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* valueQuantity = UCUM#mm "millimeters"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Binding rules</strong> are used on elements with coded values to specify the set of enumerated values for that element. Binding rules include <a href="https://hl7.org/fhir/R5/valueset-binding-strength.html">one of FHIR's binding strengths</a>: <code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code>, <code class="language-plaintext highlighter-rouge">extensible</code>, or <code class="language-plaintext highlighter-rouge">required</code>. For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* gender from http://hl7.org/fhir/ValueSet/administrative-gender (required)
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* address.state from USPSTwoLetterAlphabeticCodes (extensible)  // USPSTwoLetterAlphabeticCodes is a value set defined in US Core
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Cardinality rules</strong> constrain the number of occurrences of an element, either both upper and lower bounds, or just upper or lower bound. For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* note 1..1
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* note 1..
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* note ..1
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Contains rules</strong> are used for slicing and extensions. Both cases involve specifying the type of elements that can appear in arrays.</p>
+
+    <p>The following rule slices <code class="language-plaintext highlighter-rouge">Observation.component</code> into the two components of blood pressure:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* component contains systolicBP 1..1 and diastolicBP 1..1
+</code></pre></div>    </div>
+
+    <p>The syntax for extensions is similar, except a modified syntax that assigns local name to the extension must be used:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Adding standard FHIR extensions in an AllergyIntolerance profile:
+
+* extension contains
+    allergyintolerance-certainty named substanceCertainty 0..1 and
+    allergyintolerance-resolutionAge named resolutionAge 0..1
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Flag rules</strong> add bits of information about elements impacting how implementers should handle them. The flags are those <a href="https://hl7.org/fhir/R5/formats.html#table">defined in FHIR</a>, except FSH uses <code class="language-plaintext highlighter-rouge">MS</code> for must-support and <code class="language-plaintext highlighter-rouge">SU</code> for summary. For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* communication MS SU
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* identifier and identifier.system and identifier.value MS
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Type rules</strong> restrict the type of value that can be assigned to an element. For example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* value[x] only CodeableConcept
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* onset[x] only Period or Range
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* recorder only Reference(Practitioner)
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* recorder only Reference(Practitioner or PractitionerRole)
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Value set rules</strong> are used to populate value sets. These rules can be defined two ways:</p>
+
+    <p><a href="https://blog.healthlanguage.com/the-difference-between-intensional-and-extensional-value-sets">Extensional</a> rules list individual codes to be included and/or excluded, for example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* include $SCT#54102005 "G1 grade (finding)"
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* exclude $SCT#12619005 "Tumor grade GX"
+</code></pre></div>    </div>
+
+    <p><a href="https://blog.healthlanguage.com/the-difference-between-intensional-and-extensional-value-sets">Intensional</a> rules define the value set contents indirectly, for example:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* include codes from system http://www.nlm.nih.gov/research/umls/rxnorm
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* include codes from valueset ConditionStatusTrendVS
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* include codes from system $SCT where concept is-a #123037004 "BodyStructure"
+</code></pre></div>    </div>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* exclude codes from valueset EndStageRenalDiseaseVS
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="line-by-line-walkthrough">Line-by-Line Walkthrough</h3>
+
+<p>In this section, we will walk through a realistic example of FSH, line by line. This example does not show all the features of the FSH language.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1   Alias: $LNC = http://loinc.org
+2   Alias: $SCT = http://snomed.info/sct
+3
+4   Profile:  CancerDiseaseStatus
+5   Parent:   Observation
+6   Id:       mcode-cancer-disease-status
+7   Title:    "Cancer Disease Status"
+8   Description: "A clinician's qualitative judgment on the current trend of the cancer, e.g., whether it is stable, worsening (progressing), or improving (responding)."
+9   * ^status = #draft
+10  * extension contains EvidenceType named evidenceType 0..*
+11  * extension[evidenceType].valueCodeableConcept from CancerDiseaseStatusEvidenceTypeVS (required)
+12  * status and code and subject and effective[x] and valueCodeableConcept MS
+13  * bodySite 0..0
+14  * specimen 0..0
+15  * device 0..0
+16  * referenceRange 0..0
+17  * hasMember 0..0
+18  * component 0..0
+19  * interpretation 0..1
+20  * subject 1..1
+21  * basedOn only Reference(ServiceRequest or MedicationRequest)
+22  * partOf only Reference(MedicationAdministration or MedicationStatement or Procedure)
+23  * code = $LNC#88040-1
+24  * subject only Reference(CancerPatient)
+25  * focus only Reference(CancerCondition)
+26  * performer only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner)
+27  * effective[x] only dateTime or Period
+28  * value[x] only CodeableConcept
+29  * value[x] from ConditionStatusTrendVS (required)
+30
+31  Extension: EvidenceType
+32  Id:  mcode-evidence-type
+33  Title: "Evidence Type"
+34  Description: "Categorization of the kind of evidence used as input to the clinical judgment."
+35  * value[x] only CodeableConcept
+36
+37  ValueSet:   ConditionStatusTrendVS
+38  Id: mcode-condition-status-trend-vs
+39  Title: "Condition Status Trend Value Set"
+40  Description:  "How patient's given disease, condition, or ability is trending."
+41  * $SCT#260415000 "Not detected (qualifier)"
+42  * $SCT#268910001 "Patient condition improved (finding)"
+43  * $SCT#359746009 "Patient's condition stable (finding)"
+44  * $SCT#271299001 "Patient's condition worsened (finding)"
+45  * $SCT#709137006 "Patient condition undetermined (finding)"
+46
+47  ValueSet: CancerDiseaseStatusEvidenceTypeVS
+48  Id: mcode-cancer-disease-status-evidence-type-vs
+49  Title: "Cancer Disease Status Evidence Type Value Set"
+50  Description:  "The type of evidence backing up the clinical determination of cancer progression."
+51  * $SCT#363679005 "Imaging (procedure)"
+52  * $SCT#252416005 "Histopathology test (procedure)"
+53  * $SCT#711015009 "Assessment of symptom control (procedure)"
+54  * $SCT#5880005   "Physical examination procedure (procedure)"
+55  * $SCT#386344002 "Laboratory data interpretation (procedure)"
+</code></pre></div></div>
+
+<ul>
+  <li>Lines 1 and 2 define aliases for the LOINC and SNOMED-CT code systems.</li>
+  <li>Line 4 declares the intent to create a profile with the name <code class="language-plaintext highlighter-rouge">CancerDiseaseStatus</code>. The name is typically PascalCase (also known as UpperCamelCase) and according to FHIR, should be "<a href="https://hl7.org/fhir/structuredefinition.html#resource">usable by machine processing applications such as code generation</a>".</li>
+  <li>Line 5 says that this profile will be based on Observation.</li>
+  <li>Line 6 gives an id for this profile. The id is used to create the globally unique URL for the profile. The URL is composed of the IG’s canonical URL, the instance type (always <code class="language-plaintext highlighter-rouge">StructureDefinition</code> for profiles), and the profile’s id.</li>
+  <li>Line 7 is a human-readable title for the profile.</li>
+  <li>Line 8 is the description that will appear in the IG on the profile's page.</li>
+  <li>Line 9 is the start of the rule section of the profile. It uses <a href="reference.html#caret-paths">caret syntax</a> to set the <code class="language-plaintext highlighter-rouge">status</code> attribute in the StructureDefinition produced for this profile.</li>
+  <li>Line 10 adds an extension to the profile using the standalone extension, <code class="language-plaintext highlighter-rouge">EvidenceType</code>, gives it the local name <code class="language-plaintext highlighter-rouge">evidenceType</code>, and assigns the cardinality 0..*. <em>EvidenceType is defined on line 31.</em></li>
+  <li>Line 11 binds the <code class="language-plaintext highlighter-rouge">valueCodeableConcept</code> of the <code class="language-plaintext highlighter-rouge">evidenceType</code> extension to a value set named <code class="language-plaintext highlighter-rouge">CancerDiseaseStatusEvidenceTypeVS</code> with a required binding strength. <em>CancerDiseaseStatusEvidenceTypeVS is defined on line 47.</em></li>
+  <li>Line 12 designates a list of elements (inherited from Observation) as must-support.</li>
+  <li>Lines 13 to 20 constrain the cardinality of some inherited elements. FSH does not support setting the cardinality of a multiple items at a time, so these must be separate statements.</li>
+  <li>Lines 21 and 22 restrict the choice of resource types for two elements that refer to other resources.</li>
+  <li>Line 23 fixes the value of the code attribute to a specific LOINC code, using an alias for the code system defined on line 1.</li>
+  <li>Lines 24 to 25 reduce an inherited choice of resource references down to instances that conform specific profiles (which must be defined, but are external to this example)</li>
+  <li>Line 26 is similar to lines 24 and 25, but the reference is to an external profile.</li>
+  <li>Line 27 and 28 restrict the data type for elements that offer a choice of data types in the base resource.</li>
+  <li>Line 29 binds the remaining allowed data type for <code class="language-plaintext highlighter-rouge">value[x]</code>, a CodeableConcept, to the value set <code class="language-plaintext highlighter-rouge">ConditionStatusTrendVS</code> with a required binding. <em>ConditionStatusTrendVS is defined on line 37.</em></li>
+  <li>Line 31 declares an extension named <code class="language-plaintext highlighter-rouge">EvidenceType</code>.</li>
+  <li>Line 32 assigns an id to the extension.</li>
+  <li>Line 33 gives the extension a human-readable title.</li>
+  <li>Line 34 gives the extension a description that will appear on the extension's main page.</li>
+  <li>Line 35 begins the rule section for the extension, and restricts the data type of the <code class="language-plaintext highlighter-rouge">value[x]</code> element of the extension to a CodeableConcept.</li>
+  <li>Line 37 declares a value set named <code class="language-plaintext highlighter-rouge">ConditionStatusTrendVS</code>.</li>
+  <li>Line 38 gives the value set an id.</li>
+  <li>Line 39 provides a human readable title for the value set.</li>
+  <li>Line 40 gives the value set a description that will appear on the value set's main page.</li>
+  <li>Lines 41 to 45 define the codes that are members of the value set.</li>
+  <li>Lines 47 to 55 create another value set, <code class="language-plaintext highlighter-rouge">CancerDiseaseStatusEvidenceTypeVS</code>, similar to the previous one.</li>
+</ul>
+
+<p>A few things to note about this example:</p>
+
+<ul>
+  <li>The order of the items (aliases, profile, value set, extension) doesn't matter. In FSH, you can refer to items defined before or after the current item. By convention, aliases appear at the beginning of a file.</li>
+  <li>The example assumes the items are all in one file, but they could be in separate files. The allocation of items to files is the author's choice. Aliases defined in one file can be used in other files.</li>
+  <li>Most of the rules refer to elements by their FHIR names, but when the rule refers to an element that is not at the top level, more complex paths are required. An example of a complex path occurs on line 11, <code class="language-plaintext highlighter-rouge">extension[evidenceType].valueCodeableConcept</code>. The Language Reference contains <a href="reference.html#fsh-paths">further descriptions of paths</a>.</li>
+</ul>
+
+<h3 id="fsh-in-practice">FSH in Practice</h3>
+
+<p>This section presents an overview of how the FSH language is put into practice using <a href="https://fshschool.org">SUSHI</a>. <a href="https://fshschool.org/docs/sushi/">SUSHI</a> (an acronym for "<strong>S</strong>USHI <strong>U</strong>nshortens <strong>SH</strong>orthand <strong>I</strong>nputs") is a reference implementation and <em>de facto</em> standard for a FSH compiler that translates FSH into FHIR artifacts such as profiles, extensions, and value sets.</p>
+
+<p>The discussion in this section refers to the numbers in the following figure:</p>
+
+<p><img src="Workflow.png" alt="Overall FSH Workflow" width="800px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<h4 id="install-sushi">Install SUSHI</h4>
+
+<p>The process for installing SUSHI is described <a href="https://fshschool.org/docs/sushi/installation/">here</a>. A text editor is also needed. <a href="https://code.visualstudio.com/">Visual Studio Code</a> has a useful <a href="https://marketplace.visualstudio.com/items?itemName=MITRE-Health.vscode-language-fsh">FSH plug-in</a> that knows FSH syntax and colorizes text accordingly.</p>
+
+<h4 id="create-a-new-project">Create a New Project</h4>
+
+<p>To set up a directory structure for your IG, run <code class="language-plaintext highlighter-rouge">sushi init</code> at a command prompt. This will create the <a href="https://fshschool.org/docs/sushi/project/">specific project structure</a> required by the IG Publisher.</p>
+
+<h4 id="author-fsh-files">Author FSH Files</h4>
+
+<p>Content written in FSH is stored in plain text files (ASCII or UTF-8) with the <code class="language-plaintext highlighter-rouge">.fsh</code> extension (1). Any text editor can be used to create a FSH file. SUSHI lets the author decide how to allocate FSH definitions to <strong>.fsh</strong> files. Here are some possibilities:</p>
+
+<ul>
+  <li>One file per item</li>
+  <li>All profile definitions in one file, all value set definitions in another, all extensions in another, etc.</li>
+  <li>Group related items in one file, e.g., a profile together with its value sets, extensions, and examples</li>
+  <li>Create subdirectories for each type of item (profiles, extensions, value sets), with separate files for each item of the corresponding type inside those subdirectories.</li>
+</ul>
+
+<h4 id="run-sushi-andor-hl7-ig-publisher">Run SUSHI and/or HL7 IG Publisher</h4>
+
+<p>Before running SUSHI, you must have a <a href="https://fshschool.org/docs/sushi/configuration/">configuration file named <strong>sushi-config.yaml</strong></a> (2) containing some basic information about the project, such as its canonical URL.</p>
+
+<p>When SUSHI runs (3), it gathers all FSH files from the given input directory's <strong>input/fsh</strong> subdirectory (1), and writes generated FHIR JSON artifacts to a given output directory (4). The input and output directories appear as SUSHI command line arguments. If unspecified, the input directory will default to the current directory, and outputs will be written to <strong>./fsh-generated</strong>.</p>
+
+<p>SUSHI can be run from the command line or invoked as part of the <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">HL7 FHIR IG Publisher</a> (6). The latter requires some additional configuration information and other IG data (5). If there are no FSH files in the project's <strong>[root]/input/fsh</strong> folder(1), the IG Publisher will not run SUSHI. The generated SUSHI output is found in the <strong>[root]/fsh-generated</strong> directory (4), and the implementation guide itself (7) is located in <strong>[root]/output</strong>.</p>
+
+<p>For more information on the use of SUSHI and the IG Publisher, see <a href="https://fshschool.org/docs/sushi/">the SUSHI Documentation</a>.</p>
+
+<p><strong><a href="reference.html">Continue to FSH Language Specification -&gt;</a></strong></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/fiwg">HL7 International / FHIR Infrastructure</a>.  Package hl7.fhir.uv.shorthand#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 19:13+0545">2025-05-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/shorthand/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

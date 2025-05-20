@@ -1,0 +1,23 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "ReferralRequestExample",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/shorthand/StructureDefinition/referral-servicerequest-profile"
+    ]
+  },
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "3457005",
+        "display": "Referral to specialist"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/123"
+  }
+}

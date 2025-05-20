@@ -9,5 +9,5 @@ Description: "Profile for capturing referral requests during postnatal care."
 * code 1..1
 * code.coding.system 1..1
 * code.coding.code 1..1
-* code.coding.code from ReferralTypeVS (example binding)
+* code from http://example.org/fhir/ValueSet/referral-type (example)
 * subject 1..1

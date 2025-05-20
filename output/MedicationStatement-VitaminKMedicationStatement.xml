@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="VitaminKMedicationStatement"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/uv/shorthand/StructureDefinition/vitamin-k-medication-statement-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: MedicationStatement VitaminKMedicationStatement</b></p><a name="VitaminKMedicationStatement"> </a><a name="hcVitaminKMedicationStatement"> </a><a name="VitaminKMedicationStatement-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-vitamin-k-medication-statement-profile.html">Vitamin K Medication Statement Profile</a></p></div><p><b>status</b>: Completed</p><p><b>medication</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 1091292}">Vitamin K</span></p><p><b>subject</b>: <a href="Patient/123">Patient/123</a></p></div>
+  </text>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="1091292"/>
+      <display value="Vitamin K"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/123"/>
+  </subject>
+</MedicationStatement>

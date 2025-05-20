@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "EyeDischargeObservation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/shorthand/StructureDefinition/eye-discharge-observation-profile"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "78048007",
+        "system": "http://snomed.info/sct",
+        "display": "Purulent conjunctivitis"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/123"
+  },
+  "valueBoolean": true
+}

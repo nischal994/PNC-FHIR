@@ -1,6 +1,5 @@
 .vscode
 input-cache/**
-output/**
 temp/**
 template/**
 input-cache/schemas-r5/fhir-single.xsd

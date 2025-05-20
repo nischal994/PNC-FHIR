@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/uv/shorthand/Observation/EyeDischargeObservation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EyeDischargeObservation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/uv/shorthand/StructureDefinition/eye-discharge-observation-profile"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/shorthand/StructureDefinition/eye-discharge-observation-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation EyeDischargeObservation</b></p><a name=\"EyeDischargeObservation\"> </a><a name=\"hcEyeDischargeObservation\"> </a><a name=\"EyeDischargeObservation-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-eye-discharge-observation-profile.html\">Eye Discharge Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 78048007}\">Purulent conjunctivitis</span></p><p><b>subject</b>: <a href=\"Patient/123\">Patient/123</a></p><p><b>value</b>: true</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:78048007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "78048007" ] ;
+       fhir:display [ fhir:v "Purulent conjunctivitis" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://hl7.org/fhir/uv/shorthand/Patient/123> ;
+     fhir:reference [ fhir:v "Patient/123" ]
+  ] ; # 
+  fhir:value [
+     a fhir:boolean ;
+     fhir:v true
+  ] . # 
+
+<http://hl7.org/fhir/uv/shorthand/Patient/123> a fhir:uv .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PositionRatingVS",
+  "id": "PositionRatingVS",
+  "version": "3.0.0",
+  "url": "http://hl7.org/fhir/uv/shorthand/ValueSet/PositionRatingVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373067005",
+            "display": "Good"
+          },
+          {
+            "code": "373068000",
+            "display": "Not good"
+          }
+        ]
+      }
+    ]
+  }
+}

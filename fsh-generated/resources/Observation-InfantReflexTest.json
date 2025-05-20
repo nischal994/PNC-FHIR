@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "InfantReflexTest",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-test"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8358-4",
+        "display": "Infant reflex assessment"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://example.org/fhir/infant-tests",
+        "code": "present",
+        "display": "Present"
+      }
+    ]
+  }
+}

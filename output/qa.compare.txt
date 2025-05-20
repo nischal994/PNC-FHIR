@@ -1,0 +1,163 @@
+FHIRShorthand : Validation Results
+=========================================
+
+err = 53, warn = 39, info = 3
+$--
+Generated $--. FHIR version $-- for hl7.fhir.uv.shorthand#$-- (canonical = http://hl7.org/fhir/uv/shorthand)
+ Build Errors : 7 / 15 / 0
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/MedicationStatement-VitaminKMedicationStatement : 3 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Observation-ChillsObservation : 3 / 2 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Observation-CyanosisObservation : 9 / 2 / 2
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Observation-EyeDischargeObservation : 3 / 2 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Observation-FeverObservation : 7 / 2 / 2
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Observation-InfantReflexTest : 1 / 4 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/Procedure-OtherTreatmentProcedure : 2 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/ServiceRequest-ReferralRequestExample : 3 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-breastfeeding-position : 0 / 1 / 2
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-breastfeeding-problem : 2 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-chest-indrawing : 2 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-chills-observation-profile : 2 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-cyanosis-observation-profile : 2 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-early-jaundice : 2 / 1 / 3
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-exclusive-breastfeeding : 0 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-eye-discharge-observation-profile : 2 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-fever-observation-profile : 0 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-infant-breathing-rate : 0 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-infant-test : 0 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-infant-umbilical-cord-observation : 2 / 3 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-other-treatment-procedure-profile : 0 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-referral-servicerequest-profile : 0 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-severe-jaundice : 2 / 1 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/StructureDefinition-vitamin-k-medication-statement-profile : 2 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/fsh-generated/resources/ValueSet-PositionRatingVS : 3 / 0 / 1
+ /Users/rcpoudel/Code/PNC-FHIR/input/ImplementationGuide-hl7.fhir.uv.shorthand : 1 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/breastfeeding-position.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/breastfeeding-problem.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/early-jaundice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/chest-indrawing.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/severe-jaundice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/PositionRatingVS.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationStatement/VitaminKMedicationStatement.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ChillsObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/CyanosisObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/EyeDischargeObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/FeverObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/InfantReflexTest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/OtherTreatmentProcedure.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/ReferralRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: The jira specification file appears to be out of date with the versions, artifacts and pages currently defined in the IG.  A proposed revised file to be reviewed and, if appropriate, submitted as a pull request against the XML folder in https://github.com/HL7/JIRA-Spec-Artifacts.  To see the differences, perform a file compare on 'template/jira-current.xml' (a normalized view of what is in Github) and 'template/jira-new.xml' (reflects current IG content)
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/MedicationStatement-VitaminKMedicationStatement.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 803: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/Observation-ChillsObservation.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 728: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/Observation-CyanosisObservation.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 713: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/Observation-EyeDischargeObservation.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 753: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/Observation-FeverObservation.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 694: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/Procedure-OtherTreatmentProcedure.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 665: The link 'Patient/123' for "Patient/123" cannot be resolved
+ERROR: /Users/rcpoudel/Code/PNC-FHIR/output/ServiceRequest-ReferralRequestExample.html#/html/body/div/div/div/div/div/div/p/a at Line 192, column 774: The link 'Patient/123' for "Patient/123" cannot be resolved
+== fsh-generated/resources/MedicationStatement-VitaminKMedicationStatement.json ==
+ERROR: MedicationStatement/VitaminKMedicationStatement: MedicationStatement.medication.ofType(CodeableConcept).coding[0].code: Unknown code '1091292' in the CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '02032025'
+ERROR: MedicationStatement/VitaminKMedicationStatement: MedicationStatement.subject: Unable to resolve resource with reference 'Patient/123'
+ERROR: MedicationStatement.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/Observation-ChillsObservation.json ==
+ERROR: Observation/ChillsObservation: Observation.code.coding[0].display: Wrong Display Name 'Cold extremities' for http://snomed.info/sct#386661006. There are no valid display names found for language(s) 'en-US'. Default display is 'Fever (finding)'
+ERROR: Observation/ChillsObservation: Observation.subject: Unable to resolve resource with reference 'Patient/123'
+WARNING: Observation/ChillsObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ChillsObservation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/Observation-CyanosisObservation.json ==
+ERROR: Observation/CyanosisObservation: Observation.code.coding[0].display: Wrong Display Name 'Cyanosis' for http://snomed.info/sct#276885007. There are no valid display names found for language(s) 'en-US'. Default display is 'Core body temperature'
+ERROR: Observation/CyanosisObservation: Observation.subject: Unable to resolve resource with reference 'Patient/123'
+ERROR: Observation/CyanosisObservation: Observation.value.ofType(boolean): This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 and slicing is CLOSED: Observation.value.ofType(boolean): Does not match slice 'valueQuantity' (discriminator: ($this is Quantity))
+ERROR: Observation/CyanosisObservation: Observation: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
+ERROR: Observation/CyanosisObservation: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1). Note that other slices are allowed in addition to this required slice
+ERROR: Observation/CyanosisObservation: Observation: Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
+ERROR: Observation/CyanosisObservation: Observation.code: BodyTempCode: magic LOINC code 8310-5 required, but not found (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1). Note that other Observation codes are allowed in addition to this required magic code
+ERROR: Observation/CyanosisObservation: Observation.value.ofType(boolean): The Profile 'http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1' definition allows for the type Quantity but found type boolean
+WARNING: Observation/CyanosisObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/CyanosisObservation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/Observation-EyeDischargeObservation.json ==
+ERROR: Observation/EyeDischargeObservation: Observation.code.coding[0].code: Unknown code '78048007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: Observation/EyeDischargeObservation: Observation.subject: Unable to resolve resource with reference 'Patient/123'
+WARNING: Observation/EyeDischargeObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/EyeDischargeObservation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/Observation-FeverObservation.json ==
+ERROR: Observation/FeverObservation: Observation.subject: Unable to resolve resource with reference 'Patient/123'
+ERROR: Observation/FeverObservation: Observation.value.ofType(boolean): This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1 and slicing is CLOSED: Observation.value.ofType(boolean): Does not match slice 'valueQuantity' (discriminator: ($this is Quantity))
+ERROR: Observation/FeverObservation: Observation: Observation.category: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
+ERROR: Observation/FeverObservation: Observation: Slice 'Observation.category:VSCat': a matching slice is required, but not found (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1). Note that other slices are allowed in addition to this required slice
+ERROR: Observation/FeverObservation: Observation: Observation.effective[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1)
+ERROR: Observation/FeverObservation: Observation.value.ofType(boolean): The Profile 'http://hl7.org/fhir/StructureDefinition/bodytemp|4.0.1' definition allows for the type Quantity but found type boolean
+WARNING: Observation/FeverObservation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/FeverObservation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Observation.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/Observation-InfantReflexTest.json ==
+ERROR: Observation/InfantReflexTest: Observation.code.coding[0].display: Wrong Display Name 'Infant reflex assessment' for http://loinc.org#8358-4. Valid display is one of 3 choices: 'Blood pressure device Cuff size' (en-US), 'Blood pressure device Cuff size' (en-US) or 'BP device Cuff size' (en-US) (for the language(s) 'en-US')
+WARNING: Observation/InfantReflexTest: Observation.value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http://example.org/fhir/infant-tests' could not be found, so the code cannot be validated
+WARNING: Observation/InfantReflexTest: Observation: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Observation/InfantReflexTest: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/InfantReflexTest: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Procedure-OtherTreatmentProcedure.json ==
+ERROR: Procedure/OtherTreatmentProcedure: Procedure.subject: Unable to resolve resource with reference 'Patient/123'
+ERROR: Procedure.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/ServiceRequest-ReferralRequestExample.json ==
+WARNING: ServiceRequest/ReferralRequestExample: ServiceRequest.code: ValueSet 'http://example.org/fhir/ValueSet/referral-type' not found
+ERROR: ServiceRequest/ReferralRequestExample: ServiceRequest.code.coding[0].display: Wrong Display Name 'Referral to specialist' for http://snomed.info/sct#3457005. There are no valid display names found for language(s) 'en-US'. Default display is 'Patient referral'
+ERROR: ServiceRequest/ReferralRequestExample: ServiceRequest.subject: Unable to resolve resource with reference 'Patient/123'
+ERROR: ServiceRequest.text.div: Hyperlink 'Patient/123' at 'div/p/a' for 'Patient/123' does not resolve
+== fsh-generated/resources/StructureDefinition-breastfeeding-position.json ==
+INFORMATION: StructureDefinition/breastfeeding-position: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/breastfeeding-position'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-breastfeeding-problem.json ==
+ERROR: StructureDefinition/breastfeeding-problem: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Breastfeeding problem' for http://snomed.info/sct#365858006. There are no valid display names found for language(s) 'en-US'. Default display is 'Prognosis/outlook finding'
+ERROR: StructureDefinition/breastfeeding-problem: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Breastfeeding problem' for http://snomed.info/sct#365858006. There are no valid display names found for language(s) 'en-US'. Default display is 'Prognosis/outlook finding'
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/breastfeeding-problem'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-chest-indrawing.json ==
+ERROR: StructureDefinition/chest-indrawing: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '248338003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/chest-indrawing: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '248338003' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/chest-indrawing'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-chills-observation-profile.json ==
+ERROR: StructureDefinition/chills-observation-profile: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Cold extremities' for http://snomed.info/sct#386661006. There are no valid display names found for language(s) 'en-US'. Default display is 'Fever (finding)'
+ERROR: StructureDefinition/chills-observation-profile: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Cold extremities' for http://snomed.info/sct#386661006. There are no valid display names found for language(s) 'en-US'. Default display is 'Fever (finding)'
+== fsh-generated/resources/StructureDefinition-cyanosis-observation-profile.json ==
+ERROR: StructureDefinition/cyanosis-observation-profile: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Cyanosis' for http://snomed.info/sct#276885007. There are no valid display names found for language(s) 'en-US'. Default display is 'Core body temperature'
+ERROR: StructureDefinition/cyanosis-observation-profile: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Cyanosis' for http://snomed.info/sct#276885007. There are no valid display names found for language(s) 'en-US'. Default display is 'Core body temperature'
+== fsh-generated/resources/StructureDefinition-early-jaundice.json ==
+ERROR: StructureDefinition/early-jaundice: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Jaundice present' for http://snomed.info/sct#161832001. There are no valid display names found for language(s) 'en-US'. Default display is 'Weight decreasing'
+INFORMATION: StructureDefinition/early-jaundice: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: The code '161832001' is valid but is not active
+ERROR: StructureDefinition/early-jaundice: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'Jaundice present' for http://snomed.info/sct#161832001. There are no valid display names found for language(s) 'en-US'. Default display is 'Weight decreasing'
+INFORMATION: StructureDefinition/early-jaundice: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: The code '161832001' is valid but is not active
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/early-jaundice'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-exclusive-breastfeeding.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/exclusive-breastfeeding'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-eye-discharge-observation-profile.json ==
+ERROR: StructureDefinition/eye-discharge-observation-profile: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '78048007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/eye-discharge-observation-profile: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '78048007' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+== fsh-generated/resources/StructureDefinition-fever-observation-profile.json ==
+== fsh-generated/resources/StructureDefinition-infant-breathing-rate.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-breathing-rate'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-infant-test.json ==
+== fsh-generated/resources/StructureDefinition-infant-umbilical-cord-observation.json ==
+ERROR: StructureDefinition/infant-umbilical-cord-observation: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '364413009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: StructureDefinition/infant-umbilical-cord-observation: StructureDefinition.snapshot.element[22].binding.valueSet: Canonical URL 'http://snomed.info/sct?fhir_vs=isa/169715003' does not resolve
+ERROR: StructureDefinition/infant-umbilical-cord-observation: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '364413009' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: StructureDefinition/infant-umbilical-cord-observation: StructureDefinition.differential.element[6].binding.valueSet: Canonical URL 'http://snomed.info/sct?fhir_vs=isa/169715003' does not resolve
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-umbilical-cord-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-other-treatment-procedure-profile.json ==
+== fsh-generated/resources/StructureDefinition-referral-servicerequest-profile.json ==
+== fsh-generated/resources/StructureDefinition-severe-jaundice.json ==
+ERROR: StructureDefinition/severe-jaundice: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '271646006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+ERROR: StructureDefinition/severe-jaundice: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '271646006' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250201'
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/shorthand/StructureDefinition/severe-jaundice'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-vitamin-k-medication-statement-profile.json ==
+ERROR: StructureDefinition/vitamin-k-medication-statement-profile: StructureDefinition.snapshot.element[16].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '1091292' in the CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '02032025'
+ERROR: StructureDefinition/vitamin-k-medication-statement-profile: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Unknown code '1091292' in the CodeSystem 'http://www.nlm.nih.gov/research/umls/rxnorm' version '02032025'
+== fsh-generated/resources/ValueSet-PositionRatingVS.json ==
+ERROR: ValueSet/PositionRatingVS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
+ERROR: ValueSet/PositionRatingVS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: ValueSet/PositionRatingVS: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+== input/ImplementationGuide-hl7.fhir.uv.shorthand.xml ==
+ERROR: ImplementationGuide/hl7.fhir.uv.shorthand: ImplementationGuide: HL7 Implementation Guides must state their status explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+WARNING: ImplementationGuide/hl7.fhir.uv.shorthand: ImplementationGuide: HL7 Implementation Guides should state their maturity explicitly using the extension http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm

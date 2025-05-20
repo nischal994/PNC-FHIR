@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR Shorthand - FHIR Shorthand v3.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="http://hl7.org">
+            <img height="50" alt="Visit the HL7 website" src="assets/images/hl7-logo-header.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Shorthand</span>
+            <br/>
+            <span style="display:inline-block;">3.0.0 - 2nd Mixed Normative-Trial Use
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="overview.html">Overview</a></li>
+  <li><a href="reference.html">Language Reference</a></li>
+  <li><a href="FSHQuickReference.pdf">Quick Reference Card</a></li>
+   <li><a href="change_log.html">Change Log</a></li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">More<b class="caret"> </b></a>
+    <ul class="dropdown-menu">
+      <li><a href="https://github.com/FHIR/sushi/tree/v3.8.0/antlr/src/main/antlr" target="_blank">FSH Grammar</a></li>
+      <li><a href="full-ig.zip">Full Implementation Guide (zip file)</a></li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FHIR Shorthand</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR Shorthand - Local Development build (v3.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://hl7.org/fhir/uv/shorthand/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>FHIR Shorthand</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">3.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand|3.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-05-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FHIRShorthand</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#about-this-ig" id="markdown-toc-about-this-ig">About this IG</a></li>
+  <li><a href="#issue-reporting-and-contributions" id="markdown-toc-issue-reporting-and-contributions">Issue Reporting and Contributions</a></li>
+  <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+</ul>
+
+</div>
+<style>
+    .shadeRow1 tr:nth-child(1) { background: #fff5e6; }
+    .shadeRow6 tr:nth-child(6) { background: #fff5e6; }
+    .shadeRow9 tr:nth-child(9) { background: #fff5e6; }
+    .shadeRow10 tr:nth-child(10) { background: #fff5e6; }
+    .shadeRow11 tr:nth-child(11) { background: #fff5e6; }
+    .shadeRow12 tr:nth-child(12) { background: #fff5e6; }
+    .shadeRow14 tr:nth-child(14) { background: #fff5e6; }
+    .shadeRow15 tr:nth-child(15) { background: #fff5e6; }
+    .shadeCol7 td:nth-child(7) { background: #fff5e6; }
+    .shadeCol10 td:nth-child(10) { background: #fff5e6; }
+    .shadeHead7 th:nth-child(7) { background: #fff5e6; }
+    .shadeHead10 th:nth-child(10) { background: #fff5e6; }
+    .unshadeHead th { background: white; }
+    .optional { color: #CC3F00; }
+    .caption { color: darkgreen; font-weight: bold; }
+    .tuSpan { background-color: #fff5e6; }
+    .tuBlock { padding-top: 5px; padding-left: 5px; padding-right: 10px; padding-bottom: 5px; background-color: #fff5e6; }
+    .tuIcon { padding-left: 3px; padding-right: 3px; border: 1px grey solid; font-weight: bold; color: black; background-color: #fff5e6 }
+    code {color: black; background: #F0F0F0;}
+    h3 {margin-top: 24px;}
+    h4 {margin-top: 18px;}
+    h5 {margin-top: 12px;}
+    p {line-height: 1.5}
+</style>
+
+<p><br />
+<span style="background-color: LightYellow;">NOTE: Information on this page is <a href="https://hl7.org/fhir/versions.html#std-process">informative content</a>.</span>
+<br /></p>
+
+<p><img src="FHIR-Shorthand-Logo.png" alt="FHIR Shorthand Logo" width="300px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<h3 id="background">Background</h3>
+
+<p>FHIR Shorthand (FSH) is a domain-specific language for defining HL7<sup>®</sup> FHIR<sup>®</sup> artifacts involved in creation of FHIR Implementation Guides (IG). The goal of FSH is to allow Implementation Guide (IG) creators to more directly express their intent with fewer concerns about underlying FHIR mechanics, and efficiently produce high-quality FHIR IGs.</p>
+
+<p>Conceived in September 2019, with the first version of the specification released in March 2020, FSH has been rapidly adopted by the FHIR community. Since that time, several significant tools for processing FSH have been developed, including <a href="https://fshschool.org/docs/sushi/">SUSHI</a>, a reference implementation and <em>de facto</em> standard compiler for transforming FSH into FHIR artifacts. <a href="https://fshschool.org/docs/gofsh/">GoFSH</a>, a tool for transforming FHIR artifacts to FSH, enables lossless round-tripping from FHIR JSON to FSH and back. FSH and SUSHI have been integrated with the <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">HL7 FHIR Implementation Guide Publishing tool</a> and Firely's <a href="https://simplifier.net/">Simplifier.net</a>, allowing seamless processing from FSH to a complete IG.</p>
+
+<p>As of March 2024:</p>
+<ul>
+  <li>The <a href="https://fshschool.org/fsh-finder/">FSH Finder</a> tool reports over 600 IG-development projects using FSH.</li>
+  <li>The <a href="https://chat.fhir.org/#narrow/stream/215610-shorthand">#shorthand channel on chat.fhir.org</a> has over 500 subscribers.</li>
+  <li>The site <a href="https://npm-stat.com/charts.html?package=fsh-sushi&amp;from=2019-11-14&amp;to=2024-03-15">npm-stat</a> reports over 250,000 downloads of the <em>fsh-sushi</em> <a href="https://www.npmjs.com/">npm</a> package.</li>
+</ul>
+
+<p>FSH was approved as a Standard for Trial Use (STU 1) in May 2020 and a Mixed Normative/Trial Use Standard (R2) in February 2022 . In the ensuing period, additional activity around FSH has driven improvements, new features, and maturation of FSH and related tools. The majority of language features of FSH are now normative, but certain newer language features are proposed as <a href="https://hl7.org/fhir/versions.html#std-process">Trial Use</a>. Trial use features are clearly marked in the <a href="reference.html">language specification</a> with the <span class="tuIcon" title="Standards Status = Trial Use">TU</span> symbol.</p>
+
+<p>Designation as a normative standard does not mean that the FSH language will cease to evolve. Rather, it indicates that, except in very rare cases, future changes will be compatible with normative portions of the specification.</p>
+
+<h4 id="motivations-for-fhir-shorthand">Motivations for FHIR Shorthand</h4>
+
+<p>FSH was created in response to the need in the FHIR community for scalable, fast, user-friendly tools for IG creation and maintenance. IG authors often struggle to implement profiling projects with efficiency, consistency, and quality. Project teams iterate over the formal definitions and examples many times during the IG development process. As such, an agile approach to refactoring and revision is invaluable.</p>
+
+<p>Aside from FSH, alternative methods for IG development include:</p>
+
+<ol>
+  <li>Hand-editing FHIR conformance artifacts such as StructureDefinition and ValueSet resources gives authors full control over every aspect of the resulting FHIR profiles and definitions, but is unwieldy and prone to errors, and suitable only for FHIR experts.</li>
+  <li>The <a href="https://confluence.hl7.org/display/FHIR/FHIR+Spreadsheet+Profile+Authoring">Excel spreadsheet method</a> was introduced before FHIR 1.0 and was used for many of the first implementation guides, including <a href="https://github.com/HL7/US-Core-R4">US Core</a>. Version management is very difficult when using this method, as files are saved in binary form (.xslx) or as XML files, with the content mixed with formatting directives. Today, authors are heavily discouraged from authoring with spreadsheets and are not likely to receive priority support when using this method.</li>
+  <li><a href="https://fire.ly/products/simplifier-net/">Simplifier/Forge</a> and <a href="https://trifolia-fhir.lantanagroup.com">Trifolia-on-FHIR</a> provide graphical, form-based interfaces that help guide users through common profiling tasks. The upside is that the tools provide guidance to authors, while the potential downside is the need to navigate through many screens, and difficulty making cross-cutting changes. Trifolia is fully browser-based, with no software to install locally. Both are commercially-supported products.</li>
+</ol>
+
+<p>While recognizing there is no single "best" approach to IG development, experience across many domains has shown that complex software projects are typically approached with textual languages. As a language designed for the job of profiling and IG creation, FSH is concise, understandable, and aligned to user intentions. Users may find that the FSH language representation is a good way to understand a set of profiles or logical models. Because it is text-based, FSH brings a degree of editing agility not typically found in graphical tools (cutting and pasting, search and replace, spell checking, etc.) FSH is ideal for distributed development under source code control, providing meaningful version-to-version differentials, support for merging and conflict resolution, and nimble refactoring. These features allow FSH to scale in ways that other approaches cannot. Any text editor can be used to create or modify FSH, but advanced text editor plugins may also be used to further aid authoring.</p>
+
+<h3 id="about-this-ig">About this IG</h3>
+
+<p>The FSH IG includes the following information:</p>
+
+<ol>
+  <li>This page, providing introductory material  <em>(informative content)</em>.</li>
+  <li><a href="overview.html">FHIR Shorthand Overview</a> – Introduction to FSH language and SUSHI (a reference implementation and <em>de facto</em> standard FSH compiler) <em>(informative content)</em>.</li>
+  <li><a href="reference.html">FHIR Shorthand Language Reference</a> – The syntax and usage of the FHIR Shorthand language <em>(formal content)</em>.</li>
+  <li><a href="FSHQuickReference.pdf">Quick Reference Card</a> – A cheat sheet for FSH syntax and examples <em>(informative content)</em>.</li>
+  <li><a href="https://github.com/FHIR/sushi/tree/v3.8.0/antlr/src/main/antlr">FSH Grammar</a> – An <a href="https://www.antlr.org/">ANTLR v4</a> representation of the FSH syntax <em>(informative content)</em>.</li>
+  <li><a href="change_log.html">Change Log</a> – A history of changes to the FHIR Shorthand specification <em>(informative content)</em>.</li>
+  <li><a href="full-ig.zip">Full Implementation Guide Zip File</a> – A downloadable zip file containing the HTML and supporting files for this full specification.</li>
+</ol>
+
+<p>The following materials, useful for learning and applying FHIR Shorthand but not part of the language specification, are found on <a href="https://fshschool.org/">FSHSchool.org</a>:</p>
+
+<ol>
+  <li><a href="https://fshschool.org/docs/sushi/">SUSHI User Guide</a> – SUSHI ("SUSHI Unshortens ShortHand Inputs") is a reference implementation and <em>de facto</em> standard interpreter/compiler for FHIR Shorthand. SUSHI produces <a href="https://hl7.org/fhir/R5/overview.html">Health Level Seven (HL7®) Fast Healthcare Interoperability Resources (FHIR®)</a> profiles, extensions, and other artifacts needed to create FHIR Implementation Guides (IG).</li>
+  <li><a href="https://fshschool.org/docs/gofsh/">GoFSH User Guide</a> – GoFSH is a tool that turns FHIR artifacts into FSH. Using GoFSH, existing FHIR artifacts or complete Implementation Guides can be transformed into FSH, automatically.</li>
+  <li><a href="https://fshschool.org/docs/vscode/">FSH Visual Studio Code Extension Overview</a> – The FSH Visual Studio Code extension provides syntax highlighting, code snippets, path completion, and other features that improve FSH authoring efficiency.</li>
+  <li><a href="https://fshschool.org/docs/tutorials/">FHIR Shorthand Tutorials</a> – A step-by-step hands-on introduction to producing an Implementation Guide (IG) with FHIR Shorthand and SUSHI.</li>
+  <li><a href="https://fshschool.org/courses/">FHIR Shorthand Seminar</a> – A comprehensive overview of FHIR IG authoring basics for people who are interested in being able to independently create FHIR IGs.</li>
+  <li><a href="https://fshschool.org/FSHOnline/#/">FSH Online</a> – A coding playground for FSH, an online environment that allows you to write FSH and convert it to FHIR artifacts, convert FHIR artifacts to FSH, access examples, and share FSH code with others.</li>
+  <li><a href="https://fshschool.org/fsh-finder/">FSH Finder</a> – A list of public GitHub repositories that contain FSH code, refreshed daily.</li>
+</ol>
+
+<p>Note that the <a href="reference.html">Language Reference</a> is the formal specification, and if there is any conflict between that and any other written or programmatic materials, the former is considered the source of truth.</p>
+
+<h4 id="version-number">Version Number</h4>
+
+<p>FHIR Shorthand follows the same modified <a href="https://semver.org/">semantic versioning</a> approach as FHIR. See the documentation on versioning in <a href="https://hl7.org/fhir/R5/versions.html#versions">FHIR Releases and Versioning</a> for more detail. Implementers are encouraged to clearly indicate what version or versions of the FSH specification they implement.</p>
+
+<!-- The following are hidden since they are irrelevant in a documentation-only IG but are required by IG Publisher -->
+<!-- See: https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/Orphaned.20xhtml.20fragments.3F/near/370611655 -->
+<div style="display:none">
+
+  <h4 id="cross-version-analysis">Cross Version Analysis</h4>
+  <p>This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both <a href="package.r4.tgz">R4 (hl7.fhir.uv.shorthand.r4)</a> and <a href="package.r4b.tgz">R4B (hl7.fhir.uv.shorthand.r4b)</a> are available.</p>
+  <!--$$2$$-->
+  <h4 id="dependency-table">Dependency Table</h4>
+  <div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/rcpoudel/Code/PNC-FHIR/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: http://hl7.org/fhir/uv/shorthand">FHIR Shorthand</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.shorthand/3.0.0">hl7.fhir.uv.shorthand#3.0.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/rcpoudel/Code/PNC-FHIR/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img onclick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/6.3.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.3.0">hl7.terminology.r4#6.3.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/rcpoudel/Code/PNC-FHIR/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/5.2.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/5.2.0">hl7.fhir.uv.extensions.r4#5.2.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table></div>
+  <table class="grid"><tr><td><p><b>Package hl7.fhir.uv.extensions.r4#5.2.0</b></p>
+<p>This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Mon, Feb 10, 2025 21:45+1100+11:00)</p>
+</td></tr></table>
+  <!--$$3$$-->
+  <h4 id="globals-table">Globals Table</h4>
+  <p><i>There are no Global profiles defined</i></p>
+  <!--$$4$$-->
+  <h4 id="ip-statements">IP Statements</h4>
+  <p>This publication includes IP covered under the following statements.</p>
+  <ul>
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-infant-breathing-rate.html">BreathingRateObservation</a>, <a href="StructureDefinition-fever-observation-profile.html">FeverObservationProfile</a>, <a href="Observation-FeverObservation.html">Observation/FeverObservation</a> and <a href="Observation-InfantReflexTest.html">Observation/InfantReflexTest</a></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="StructureDefinition-breastfeeding-position.html">BreastfeedingPositionObservation</a>, <a href="StructureDefinition-breastfeeding-problem.html">BreastfeedingProblemObservation</a><span id="ips_2" onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 12 more</span></span><span id="ips2_2" style="display: none">, <a href="StructureDefinition-chills-observation-profile.html">ChillsObservationProfile</a>, <a href="StructureDefinition-cyanosis-observation-profile.html">CyanosisObservationProfile</a>, <a href="StructureDefinition-eye-discharge-observation-profile.html">EyeDischargeObservationProfile</a>, <a href="StructureDefinition-early-jaundice.html">JaundiceWithin24HoursObservation</a>, <a href="Observation-ChillsObservation.html">Observation/ChillsObservation</a>, <a href="Observation-CyanosisObservation.html">Observation/CyanosisObservation</a>, <a href="Observation-EyeDischargeObservation.html">Observation/EyeDischargeObservation</a>, <a href="ValueSet-PositionRatingVS.html">PositionRatingVS</a>, <a href="ServiceRequest-ReferralRequestExample.html">ServiceRequest/ReferralRequestExample</a>, <a href="StructureDefinition-chest-indrawing.html">SevereChestIndrawingObservation</a>, <a href="StructureDefinition-severe-jaundice.html">SevereJaundiceObservation</a> and <a href="StructureDefinition-infant-umbilical-cord-observation.html">UmbilicalCordObservationProfile</a></span></li>
+</ul>
+</div></li>
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="StructureDefinition-infant-umbilical-cord-observation.html">UmbilicalCordObservationProfile</a></li>
+</ul>
+</div></li>
+<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div id="ipp_4" onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.3.0/CodeSystem-v3-rxNorm.html">RxNorm</a>: <a href="MedicationStatement-VitaminKMedicationStatement.html">MedicationStatement/VitaminKMedicationStatement</a> and <a href="StructureDefinition-vitamin-k-medication-statement-profile.html">VitaminKMedicationStatementProfile</a></li>
+</ul>
+</div></li>
+</ul>
+  <!--$$1$$-->
+
+</div>
+
+<h3 id="issue-reporting-and-contributions">Issue Reporting and Contributions</h3>
+
+<ul>
+  <li>
+    <p>FSH language issues and suggestions can be made <a href="https://jira.hl7.org/issues/?jql=project%20%3D%20FHIR%20AND%20Specification%20%3D%20%22Shorthand%20(FHIR)%20%5BFHIR-shorthand%5D%22">in the HL7 Jira</a>. When filing FSH language or IG issues, use project="FHIR" AND Specification = "Shorthand (FHIR) [FHIR-shorthand]".</p>
+  </li>
+  <li>
+    <p>SUSHI bugs, issues, and suggestions can be made <a href="https://github.com/FHIR/sushi/issues">here</a>.</p>
+  </li>
+  <li>
+    <p>GoFSH bugs, issues, and suggestions can be made <a href="https://github.com/FHIR/GoFSH">here</a>.</p>
+  </li>
+  <li>
+    <p>If your FSH project is not listed in FSH Finder, log an issue <a href="https://github.com/FSHSchool/fsh-finder/issues">here</a> or submit a pull request on the list of organizations in <a href="https://github.com/FSHSchool/fsh-finder/tree/v1.1">settings.yml</a>.</p>
+  </li>
+  <li>
+    <p>FSH examples for inclusion in FSH Online can be contributed <a href="https://github.com/FSHSchool/FSHOnline-Examples">here</a>.</p>
+  </li>
+</ul>
+
+<h3 id="authors-and-contributors">Authors and Contributors</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>Name</th>
+      <th>Organization</th>
+      <th>Contact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Author</td>
+      <td>Mark A. Kramer</td>
+      <td>MITRE Corporation</td>
+      <td>mkramer@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Author</td>
+      <td>Chris Moesel</td>
+      <td>MITRE Corporation</td>
+      <td>cmoesel@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Julia K. Afeltra</td>
+      <td>MITRE Corporation</td>
+      <td>jafeltra@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Julian A. Carter</td>
+      <td>MITRE Corporation</td>
+      <td>jacarter@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Samantha Citron</td>
+      <td>MITRE Corporation</td>
+      <td>scitron@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Nick Freiter</td>
+      <td>MITRE Corporation</td>
+      <td>nfreiter@mitre.org</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Joe Paquette</td>
+      <td>athenahealth</td>
+      <td>jpaquette@athenahealth.com</td>
+    </tr>
+    <tr>
+      <td>Contributor</td>
+      <td>Mint N. Thompson</td>
+      <td>MITRE Corporation</td>
+      <td>mathompson@mitre.org</td>
+    </tr>
+    <tr>
+      <td>FHIR Infrastructure Co-chair</td>
+      <td>Rick Geimer</td>
+      <td>Lantana Consulting Group</td>
+      <td>rick.geimer@lantanagroup.com</td>
+    </tr>
+    <tr>
+      <td>FHIR Infrastructure Co-chair</td>
+      <td>Josh Mandel</td>
+      <td>SMART Health IT</td>
+      <td>jmandel@gmail.com</td>
+    </tr>
+    <tr>
+      <td>FHIR Infrastructure Co-chair</td>
+      <td>Lloyd McKenzie</td>
+      <td>HL7 Canada/Gevity</td>
+      <td>lloyd@lmckenzie.com</td>
+    </tr>
+    <tr>
+      <td>FHIR Infrastructure Co-chair</td>
+      <td>Yunwei Wang</td>
+      <td>MITRE Corporation</td>
+      <td>yunweiw@mitre.org</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The authors gratefully acknowledge the many contributions from numerous users and facilitators who helped shape, mature, debug, and advance the FSH specification. The authors want to thank all those who participate on the <a href="https://chat.fhir.org/#narrow/stream/215610-shorthand">shorthand channel via chat.fhir.org</a>. While every discussion helps build the FSH knowledge base and strengthen the community of FSH, we especially appreciate those who provide answers and participate in design discussions. We therefore recognize:</p>
+
+<p>Reece Adamson,
+Kurt Allen,
+Carl Anderson,
+Keith Boone,
+Giorgio Cangioli,
+Gino Canessa,
+Etienne Cantineau,
+Juan Manuel Caputo,
+Sam Citron,
+Sheila Connelly,
+Carmela Couderc,
+Stuart Cox,
+Nathan Davis,
+Bart Decuypere,
+Paul Denning,
+Noemi Deppenwiese,
+Mark Discenza,
+Jean Duteau,
+Oliver Egger,
+Brett Esler,
+Richard Esmond,
+Richard Ettema,
+Michael Faughn,
+Benjamin Flessner,
+Scott Fradkin,
+Sarah Gaunt,
+Nick George,
+Hugh Glover,
+Andy Gregorowicz,
+Grahame Grieve,
+Alex Goel,
+Nick Goupinets,
+John Grimes,
+Eric Haas,
+Torben Hagensen,
+Bill Harty,
+Rob Hausam,
+David Hay,
+Bret Heale,
+Simone Heckmann,
+Martin Höcker,
+Mark Iantorno,
+Brian Kaney,
+Daniel Karlsson,
+Richard Kavanagh,
+John Keyes,
+Max Körlinge,
+Ewout Kramer,
+Saul Kravitz,
+Halina Labikova,
+Patrick Langford,
+Michael Lawley,
+Carl Leitner,
+Hank Lenzi,
+Rutt Lindström,
+Geoff Low,
+Stephen MacVicar,
+Dylan Mahalingam,
+Rute Martins Baptista,
+Josh Mandel,
+Max Masnick,
+Lloyd McKenzie,
+Stuart McGrigor,
+Bob Milius,
+John Moehrke,
+Ryan Moehrke,
+Jabeen Mohammed,
+Sean Muir,
+Dipanjan Mukherjee,
+Muthu Muthuraj,
+Christian Nau,
+Craig Newman,
+Catherine Hosage Norman,
+Diana Ovelgoenne,
+Joe Paquette,
+Tom Parker-Shemilt,
+Janaka Peiris,
+Vadim Peretokin,
+Vassil Peytchev,
+Brian Postlethwaite,
+Caroline Potteiger,
+Mareike Przysucha,
+David Pyke,
+Andre Quina,
+Joshua Reynolds,
+Rob Reynolds,
+Bryn Rhodes,
+Andy Richardson,
+Peter Robinson,
+Kirstine Rosenbeck Gøeg,
+Thomas Tveit Rosenlund,
+Shovan Roy,
+Julian Sass,
+Michael Sauer,
+Mark Scrimshire,
+Larry Shields,
+John Silva,
+Elliot Silver,
+Igor Sirkovich,
+Bill Sorensen,
+Corey Spears,
+Richard Stanley,
+Lee Surprenant,
+Jose Costa Teixeira,
+May Terry,
+Arvid Thunholm,
+Eric Torstenson,
+Richard Townley-O'Neill,
+Conor Vahland,
+Pétur Valdimarsson,
+Bas van den Heuvel,
+Matthijs van der Wielen
+Bence Vass,
+Barbro Vessman,
+Jens Villadsen,
+Ward Weistra,
+Patrick Werner,
+Rien Wertheim,
+David Winters,
+Alexander Zautke,
+and
+Michaela Ziegler.</p>
+
+<p>The authors apologize if they have omitted any contributor from this list.</p>
+
+<p><strong><a href="overview.html">Continue to Overview -&gt;</a></strong></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/fiwg">HL7 International / FHIR Infrastructure</a>.  Package hl7.fhir.uv.shorthand#3.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, May 20, 2025 19:13+0545">2025-05-20</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir/uv/shorthand/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

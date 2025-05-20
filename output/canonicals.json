@@ -1,0 +1,128 @@
+[
+  {
+    "id" : "hl7.fhir.uv.shorthand",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/uv/shorthand/ImplementationGuide/hl7.fhir.uv.shorthand",
+    "version" : "3.0.0",
+    "name" : "FHIRShorthand"
+  },
+  {
+    "id" : "breastfeeding-position",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/breastfeeding-position",
+    "version" : "3.0.0",
+    "name" : "BreastfeedingPositionObservation"
+  },
+  {
+    "id" : "breastfeeding-problem",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/breastfeeding-problem",
+    "version" : "3.0.0",
+    "name" : "BreastfeedingProblemObservation"
+  },
+  {
+    "id" : "chest-indrawing",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/chest-indrawing",
+    "version" : "3.0.0",
+    "name" : "SevereChestIndrawingObservation"
+  },
+  {
+    "id" : "chills-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/chills-observation-profile",
+    "version" : "3.0.0",
+    "name" : "ChillsObservationProfile"
+  },
+  {
+    "id" : "cyanosis-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/cyanosis-observation-profile",
+    "version" : "3.0.0",
+    "name" : "CyanosisObservationProfile"
+  },
+  {
+    "id" : "early-jaundice",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/early-jaundice",
+    "version" : "3.0.0",
+    "name" : "JaundiceWithin24HoursObservation"
+  },
+  {
+    "id" : "exclusive-breastfeeding",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/exclusive-breastfeeding",
+    "version" : "3.0.0",
+    "name" : "ExclusiveBreastfeedingObservationProfile"
+  },
+  {
+    "id" : "eye-discharge-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/eye-discharge-observation-profile",
+    "version" : "3.0.0",
+    "name" : "EyeDischargeObservationProfile"
+  },
+  {
+    "id" : "fever-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/fever-observation-profile",
+    "version" : "3.0.0",
+    "name" : "FeverObservationProfile"
+  },
+  {
+    "id" : "infant-breathing-rate",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-breathing-rate",
+    "version" : "3.0.0",
+    "name" : "BreathingRateObservation"
+  },
+  {
+    "id" : "infant-test",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-test",
+    "version" : "3.0.0",
+    "name" : "InfantTestObservation"
+  },
+  {
+    "id" : "infant-umbilical-cord-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/infant-umbilical-cord-observation",
+    "version" : "3.0.0",
+    "name" : "UmbilicalCordObservationProfile"
+  },
+  {
+    "id" : "other-treatment-procedure-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/other-treatment-procedure-profile",
+    "version" : "3.0.0",
+    "name" : "OtherTreatmentProcedureProfile"
+  },
+  {
+    "id" : "referral-servicerequest-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/referral-servicerequest-profile",
+    "version" : "3.0.0",
+    "name" : "ReferralServiceRequestProfile"
+  },
+  {
+    "id" : "severe-jaundice",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/severe-jaundice",
+    "version" : "3.0.0",
+    "name" : "SevereJaundiceObservation"
+  },
+  {
+    "id" : "vitamin-k-medication-statement-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/uv/shorthand/StructureDefinition/vitamin-k-medication-statement-profile",
+    "version" : "3.0.0",
+    "name" : "VitaminKMedicationStatementProfile"
+  },
+  {
+    "id" : "PositionRatingVS",
+    "type" : "ValueSet",
+    "url" : "http://hl7.org/fhir/uv/shorthand/ValueSet/PositionRatingVS",
+    "version" : "3.0.0",
+    "name" : "PositionRatingVS"
+  }
+]

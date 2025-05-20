@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "vitamin-k-medication-statement-profile",
+  "url": "http://hl7.org/fhir/uv/shorthand/StructureDefinition/vitamin-k-medication-statement-profile",
+  "version": "3.0.0",
+  "name": "VitaminKMedicationStatementProfile",
+  "title": "Vitamin K Medication Statement Profile",
+  "status": "draft",
+  "description": "Profile for recording administration of Vitamin K to infants using MedicationStatement.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationStatement.medication[x]:medicationCodeableConcept",
+        "path": "MedicationStatement.medication[x]",
+        "sliceName": "medicationCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "1091292",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "display": "Vitamin K"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

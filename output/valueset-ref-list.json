@@ -1,0 +1,16 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/uv/shorthand/ValueSet/PositionRatingVS",
+      "version" : "3.0.0",
+      "status" : "draft",
+      "name" : "PositionRatingVS",
+      "title" : null,
+      "description" : null,
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-breastfeeding-position.html" : "BreastfeedingPositionObservation"
+    }
+  ]
+}

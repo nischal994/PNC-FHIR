@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="8247d1b9-f996-4af1-b125-1208fe64549d"/>
+  <meta>
+    <lastUpdated value="2025-05-20T19:13:32.272+05:45"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/uv/shorthand/ValueSet/PositionRatingVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025</p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373067005"> </a>  
+                  <a href="http://snomed.info/id/373067005">373067005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>No (qualifier value)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-373068000"> </a>  
+                  <a href="http://snomed.info/id/373068000">373068000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Undetermined (qualifier value)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/uv/shorthand/ValueSet/PositionRatingVS"/>
+        <version value="3.0.0"/>
+        <name value="PositionRatingVS"/>
+        <status value="draft"/>
+        <date value="2025-05-20T19:13:00+05:45"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7ac28d5a-a8b4-4bb6-b697-1497e4571f13"/>
+          <timestamp value="2025-05-20T19:14:48+05:45"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373067005"/>
+            <display value="No (qualifier value)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="373068000"/>
+            <display value="Undetermined (qualifier value)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

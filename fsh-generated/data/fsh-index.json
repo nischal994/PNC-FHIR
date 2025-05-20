@@ -1,0 +1,202 @@
+[
+  {
+    "outputFile": "MedicationStatement-VitaminKMedicationStatement.json",
+    "fshName": "VitaminKMedicationStatement",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleVitaminKMedicationStatement.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "Observation-ChillsObservation.json",
+    "fshName": "ChillsObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleChillsObservation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-CyanosisObservation.json",
+    "fshName": "CyanosisObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleCyanosisObservation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-EyeDischargeObservation.json",
+    "fshName": "EyeDischargeObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleEyeDischargeObservation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-FeverObservation.json",
+    "fshName": "FeverObservation",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleFeverObservation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Observation-InfantReflexTest.json",
+    "fshName": "InfantReflexTest",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleInfantTestObservation.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "Procedure-OtherTreatmentProcedure.json",
+    "fshName": "OtherTreatmentProcedure",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleOtherTreatmentProcedure.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ServiceRequest-ReferralRequestExample.json",
+    "fshName": "ReferralRequestExample",
+    "fshType": "Instance",
+    "fshFile": "examples/ExampleReferralServiceRequestProfile.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-breastfeeding-position.json",
+    "fshName": "BreastfeedingPositionObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/BreastfeedingPositionObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "StructureDefinition-breastfeeding-problem.json",
+    "fshName": "BreastfeedingProblemObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/BreastfeedingProblemObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-chest-indrawing.json",
+    "fshName": "SevereChestIndrawingObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/SevereChestIndrawingObservation.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-chills-observation-profile.json",
+    "fshName": "ChillsObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/ChillsObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-cyanosis-observation-profile.json",
+    "fshName": "CyanosisObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/CyanosisObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-early-jaundice.json",
+    "fshName": "JaundiceWithin24HoursObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/JaundiceWithin24HoursObservation.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-exclusive-breastfeeding.json",
+    "fshName": "ExclusiveBreastfeedingObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/ExclusiveBreastfeedingObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "StructureDefinition-eye-discharge-observation-profile.json",
+    "fshName": "EyeDischargeObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/EyeDischargeObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-fever-observation-profile.json",
+    "fshName": "FeverObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/FeverObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 12
+  },
+  {
+    "outputFile": "StructureDefinition-infant-breathing-rate.json",
+    "fshName": "BreathingRateObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/BreathingRateObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-infant-test.json",
+    "fshName": "InfantTestObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/InfantsTestsObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-infant-umbilical-cord-observation.json",
+    "fshName": "UmbilicalCordObservationProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/UmbilicleCordObservationProfile.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-other-treatment-procedure-profile.json",
+    "fshName": "OtherTreatmentProcedureProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/OtherTreatmentProcedureProfile.fsh",
+    "startLine": 1,
+    "endLine": 8
+  },
+  {
+    "outputFile": "StructureDefinition-referral-servicerequest-profile.json",
+    "fshName": "ReferralServiceRequestProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/ReferralServiceRequestProfile.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-severe-jaundice.json",
+    "fshName": "SevereJaundiceObservation",
+    "fshType": "Profile",
+    "fshFile": "profile/SevereJaundiceObservation.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-vitamin-k-medication-statement-profile.json",
+    "fshName": "VitaminKMedicationStatementProfile",
+    "fshType": "Profile",
+    "fshFile": "profile/VitaminKProfile.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "ValueSet-PositionRatingVS.json",
+    "fshName": "PositionRatingVS",
+    "fshType": "ValueSet",
+    "fshFile": "profile/BreastfeedingPositionObservationProfile.fsh",
+    "startLine": 6,
+    "endLine": 8
+  }
+]

@@ -10,8 +10,33 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/breastfeeding-position" key="StructureDefinition-breastfeeding-position" name="BreastfeedingPositionObservation"/>
+<artifact id="StructureDefinition/breastfeeding-problem" key="StructureDefinition-breastfeeding-problem" name="BreastfeedingProblemObservation"/>
+<artifact id="StructureDefinition/chills-observation-profile" key="StructureDefinition-chills-observation-profile" name="Chills (Cold Extremities) Observation Profile"/>
+<artifact id="StructureDefinition/cyanosis-observation-profile" key="StructureDefinition-cyanosis-observation-profile" name="Cyanosis Observation Profile"/>
+<artifact id="MedicationStatement/VitaminKMedicationStatement" key="MedicationStatement-VitaminKMedicationStatement" name="Example MedicationStatement - VitaminKMedicationStatement"/>
+<artifact id="Observation/ChillsObservation" key="Observation-ChillsObservation" name="Example Observation - ChillsObservation"/>
+<artifact id="Observation/CyanosisObservation" key="Observation-CyanosisObservation" name="Example Observation - CyanosisObservation"/>
+<artifact id="Observation/EyeDischargeObservation" key="Observation-EyeDischargeObservation" name="Example Observation - EyeDischargeObservation"/>
+<artifact id="Observation/FeverObservation" key="Observation-FeverObservation" name="Example Observation - FeverObservation"/>
+<artifact id="Observation/InfantReflexTest" key="Observation-InfantReflexTest" name="Example Observation - InfantReflexTest"/>
+<artifact id="Procedure/OtherTreatmentProcedure" key="Procedure-OtherTreatmentProcedure" name="Example Procedure - OtherTreatmentProcedure"/>
+<artifact id="ServiceRequest/ReferralRequestExample" key="ServiceRequest-ReferralRequestExample" name="Example ServiceRequest - ReferralRequestExample"/>
+<artifact id="StructureDefinition/exclusive-breastfeeding" key="StructureDefinition-exclusive-breastfeeding" name="Exclusive Breastfeeding Observation"/>
+<artifact id="StructureDefinition/eye-discharge-observation-profile" key="StructureDefinition-eye-discharge-observation-profile" name="Eye Discharge Observation Profile"/>
+<artifact id="StructureDefinition/fever-observation-profile" key="StructureDefinition-fever-observation-profile" name="Fever Observation Profile"/>
+<artifact id="StructureDefinition/infant-breathing-rate" key="StructureDefinition-infant-breathing-rate" name="Infant Breathing Rate"/>
+<artifact id="StructureDefinition/infant-test" key="StructureDefinition-infant-test" name="Infant Test Observations"/>
+<artifact id="StructureDefinition/infant-umbilical-cord-observation" key="StructureDefinition-infant-umbilical-cord-observation" name="Infant Umbilical Cord Condition"/>
+<artifact id="StructureDefinition/early-jaundice" key="StructureDefinition-early-jaundice" name="JaundiceWithin24HoursObservation"/>
+<artifact id="StructureDefinition/other-treatment-procedure-profile" key="StructureDefinition-other-treatment-procedure-profile" name="Other Treatment or Medication Procedure Profile"/>
+<artifact id="ValueSet/PositionRatingVS" key="ValueSet-PositionRatingVS" name="PositionRatingVS"/>
+<artifact id="StructureDefinition/referral-servicerequest-profile" key="StructureDefinition-referral-servicerequest-profile" name="Referral ServiceRequest Profile"/>
+<artifact id="StructureDefinition/chest-indrawing" key="StructureDefinition-chest-indrawing" name="SevereChestIndrawingObservation"/>
+<artifact id="StructureDefinition/severe-jaundice" key="StructureDefinition-severe-jaundice" name="SevereJaundiceObservation"/>
 <artifact deprecated="true" id="CodeSystem/shorthand-code-system" key="shorthand-code-system" name="Shorthand Code System"/>
 <artifact deprecated="true" id="ValueSet/shorthand-instance-tags" key="shorthand-instance-tags" name="Shorthand Instance Tags"/>
+<artifact id="StructureDefinition/vitamin-k-medication-statement-profile" key="StructureDefinition-vitamin-k-medication-statement-profile" name="Vitamin K Medication Statement Profile"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
